@@ -19,6 +19,15 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/Header/Header.jsx",
+    "src/components/Contact/ThunksContents.jx",
+    "src/components/Contact/ConfirmContents.jsx",
+    "src/components/Contact/FormContents.jsx",
+    "src/components/Contact/FormContents.jsx"
+  ],
   "exclude": ["node_modules"]
 }
