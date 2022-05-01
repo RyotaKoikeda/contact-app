@@ -1,0 +1,29 @@
+@import "@/styles/mixin";
+
+.contact {
+  position: relative;
+  background: rgba($color: #fff, $alpha: 0.6);
+  &__load {
+    margin: 32px 0;
+    text-align: center;
+    &_img {
+      margin: 32px auto;
+    }
+    &_text {
+      font-size: 15px;
+    }
+  }
+  &_img {
+    position: absolute;
+    top: -20px;
+    left: 36%;
+    width: 540px;
+    opacity: 0.8;
+    z-index: -1;
+    transform: translateX(-50%);
+    @include pc {
+      top: calc(-20vw / (1280 / 100));
+      width: calc(540vw / (1280 / 100));
+    }
+  }
+}
