@@ -1,7 +1,12 @@
 import React from "react";
 import Button from "@mui/material/Button";
 
-const GreyButton = (props) => {
+type Props = {
+  label: string,
+  onClick: () => void,
+};
+
+const GreyButton: React.VFC<Props> = (props) => {
   return (
     <div>
       <Button

@@ -1,13 +1,12 @@
 import { useCallback, useState } from "react";
 
 export const useMail = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [active, setActive] = useState("form");
-  const [loading, setLoading] = useState(false);
-  const pattern =
-    /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [active, setActive] = useState<string>("form");
+  const [loading, setLoading] = useState<boolean>(false);
+  const pattern = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
 
   const send = async () => {
     setLoading(true);

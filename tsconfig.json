@@ -23,11 +23,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/Header/Header.jsx",
-    "src/components/Contact/ThunksContents.jx",
-    "src/components/Contact/ConfirmContents.jsx",
-    "src/components/Contact/FormContents.jsx",
-    "src/components/Contact/FormContents.jsx"
+    "src/components/Header/Header.tsx",
+    "src/components/Contact/ThunksContents.tsx",
+    "src/components/Contact/ConfirmContents.tsx",
+    "src/components/Contact/FormContents.tsx"
   ],
   "exclude": ["node_modules"]
 }

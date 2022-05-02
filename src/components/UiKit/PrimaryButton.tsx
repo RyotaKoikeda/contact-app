@@ -1,7 +1,12 @@
 import React from "react";
 import Button from "@mui/material/Button";
 
-const PrimaryButton = (props) => {
+type Props = {
+  label: string,
+  onClick: () => void,
+};
+
+const PrimaryButton: React.VFC<Props> = (props) => {
   return (
     <div>
       <Button

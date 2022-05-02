@@ -2,12 +2,18 @@ import React from "react";
 import { PrimaryButton, GreyButton } from "../UiKit";
 import Divider from "@mui/material/Divider";
 
-const ConfirmContents = (props) => {
+type Props = {
+  name: string;
+  email: string;
+  message: string;
+  clickForm: () => void;
+  send: () => void;
+};
+
+const ConfirmContents: React.VFC<Props> = (props) => {
   return (
     <div>
-      <p style={{ margin: "32px 0 60px", fontSize: 15, textAlign: "center" }}>
-        入力内容をご確認ください
-      </p>
+      <p style={{ margin: "32px 0 60px", fontSize: 15, textAlign: "center" }}>入力内容をご確認ください</p>
       <div>
         <p>名前:</p>
         <p>{props.name}</p>

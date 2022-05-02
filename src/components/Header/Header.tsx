@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 
 const Header = () => {
-  const [active, setActive] = useState(false);
-
-  const menuFunction = () => {
-    setActive(!active);
-  };
-
   return (
     <>
       <AppBar position="fixed" sx={{ background: "#fff", color: "#444" }}>

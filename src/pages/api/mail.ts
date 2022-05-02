@@ -1,8 +1,9 @@
-import { createTransport } from "nodemailer";
+import type { NextApiRequest, NextApiResponse } from "next";
+const nodemailer = require("nodemailer");
 
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const reqest = JSON.parse(req.body);
-  const transporter = createTransport({
+  const transporter = nodemailer.createTransport({
     service: "gmail",
     port: 465,
     secure: true,

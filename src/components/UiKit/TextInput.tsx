@@ -1,7 +1,18 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 
-const TextInput = (props) => {
+type Props = {
+  fullWidth: boolean;
+  label: string;
+  multiline: boolean;
+  required: boolean;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  rows: number;
+  value: string;
+  type: string;
+};
+
+const TextInput: React.VFC<Props> = (props) => {
   return (
     <TextField
       fullWidth={props.fullWidth}

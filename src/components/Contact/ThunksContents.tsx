@@ -1,13 +1,11 @@
 import React from "react";
-import { PrimaryButton, GreyButton } from "../UiKit";
+import { GreyButton } from "../UiKit";
 
-const ThunksContents = (props) => {
+const ThunksContents = () => {
   return (
     <div>
       <div>
-        <h3 style={{ margin: "60px 0 32px", textAlign: "center" }}>
-          送信完了しました
-        </h3>
+        <h3 style={{ margin: "60px 0 32px", textAlign: "center" }}>送信完了しました</h3>
         <p
           style={{
             margin: "32px 0 60px",
